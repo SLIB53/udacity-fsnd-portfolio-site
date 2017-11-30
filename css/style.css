@@ -33,7 +33,8 @@ main {
 }
 
 .title-text-separator {
-    margin: 34px 0;
+    max-width: 660px;
+    margin: 34px auto;
     border: 0;
     height: 1px;
     background: white;
@@ -47,8 +48,9 @@ main {
 
 #links {
     display: flex;
+    max-width: 660px;
     padding: 55px 0;
-    margin: 0;
+    margin: 0 auto;
 }
 
 .links-item {
@@ -60,10 +62,86 @@ main {
     font-family: 'Fira Sans', sans-serif;
 }
 
+.links-item:active {
+    background-color: #aa0000;
+}
+
 .links-item a {
     display: block;
-    padding: 13px;
+    padding: 17px;
     color: #ff2222;
     text-decoration: unset;
-    font-size: 0.8em;
+    font-size: 13px;
 }
+
+.links-item a:active {
+    color: white;
+}
+
+/* Icon-ified Links */
+@media screen and (max-width: 599px) {
+    .links-item {
+        min-height: 48px;
+    }
+    
+    .links-item a {
+        font-size: 0; /* clear base style */
+        padding: 0; /* clear base style */
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    .links-item.github  a {
+        background-size: 16px;
+        background-image: url("../img/GitHub-Mark-32px.png");
+    }
+    
+    .links-item.twitter a {
+        background-size: 16px;
+        background-image: url("../img/Twitter_LogoPairingLockup_Username_C_32px.png");
+    }
+    
+    .links-item.linkedin a {
+        background-size: 21px;
+        background-image: url("../img/In-Black-34px-R.png");
+    }
+}
+
+/* Wide Links */
+@media screen and (min-width: 600px) {
+        .links-item {
+            background-repeat: no-repeat;
+            background-position-x: 13px;
+            background-position-y: center;
+        }
+
+        .links-item.github {
+            background-size: 16px;
+            background-image: url("../img/GitHub-Mark-32px.png");
+        }
+
+        .links-item.github a:after {
+            content: "/akilram";
+        }
+
+        .links-item.twitter {
+            background-size: 16px;
+            background-image: url("../img/Twitter_LogoPairingLockup_Username_C_32px.png");
+        }
+
+        .links-item.twitter a {
+            /* for replacing text in :after */
+            font-size: 0;
+        }
+        
+        .links-item.twitter a:after {
+            font-size: 13px;
+            content: "@akilram";
+        }
+
+        .links-item.linkedin {
+            background-size: 21px;
+            background-image: url("../img/In-Black-34px-R.png");
+        }
+    }
