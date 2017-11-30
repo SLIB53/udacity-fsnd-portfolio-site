@@ -13,9 +13,9 @@ body {
 
 header {
     background-color: #ff2222;
-    color: white;
-    text-align: center;
     padding: 89px 34px;
+    text-align: center;
+    color: white;
 }
 
 main {
@@ -26,23 +26,19 @@ main {
     font-weight: 100;
 }
 
-@media screen and (max-width: 399px) {
-    .page-title-text {
-        display: flex;
+@media screen and (min-width: 400px) {
+    .page-title-text.first-name::before {
+        content: "█ ";
+    }
+
+    .page-title-text.last-name::before {
+        content: "░ ";
     }
 }
 
-.page-title-text.first-name::before {
-    content: "█ ";
-}
-
-.page-title-text.last-name::before {
-    content: "░ ";
-}
-
 .title-text-separator {
-    max-width: 660px;
     margin: 34px auto;
+    max-width: 660px;
     border: 0;
     height: 1px;
     background: white;
