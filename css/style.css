@@ -118,38 +118,38 @@ main {
 
 /* Wide Links */
 @media screen and (min-width: 600px) {
-        .links-item {
-            background-repeat: no-repeat;
-            background-position-x: 13px;
-            background-position-y: center;
-        }
-
-        .links-item.github {
-            background-size: 16px;
-            background-image: url("../img/GitHub-Mark-32px.png");
-        }
-
-        .links-item.github a:after {
-            content: "/akilram";
-        }
-
-        .links-item.twitter {
-            background-size: 16px;
-            background-image: url("../img/Twitter_LogoPairingLockup_Username_C_32px.png");
-        }
-
-        .links-item.twitter a {
-            /* for replacing text in :after */
-            font-size: 0;
-        }
-        
-        .links-item.twitter a:after {
-            font-size: 13px;
-            content: "@akilram";
-        }
-
-        .links-item.linkedin {
-            background-size: 21px;
-            background-image: url("../img/In-Black-34px-R.png");
-        }
+    .links-item {
+        background-repeat: no-repeat;
+        background-position-x: 13px;
+        background-position-y: center;
     }
+
+    .links-item.github {
+        background-size: 16px;
+        background-image: url("../img/GitHub-Mark-32px.png");
+    }
+
+    .links-item.github a:after {
+        content: "/akilram";
+    }
+
+    .links-item.twitter {
+        background-size: 16px;
+        background-image: url("../img/Twitter_LogoPairingLockup_Username_C_32px.png");
+    }
+
+    .links-item.twitter a {
+        /* for replacing text in :after */
+        font-size: 0;
+    }
+    
+    .links-item.twitter a:after {
+        font-size: 13px;
+        content: "@akilram";
+    }
+
+    .links-item.linkedin {
+        background-size: 21px;
+        background-image: url("../img/In-Black-34px-R.png");
+    }
+}
