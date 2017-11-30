@@ -32,6 +32,14 @@ main {
     }
 }
 
+.page-title-text.first-name::before {
+    content: "█ ";
+}
+
+.page-title-text.last-name::before {
+    content: "░ ";
+}
+
 .title-text-separator {
     max-width: 660px;
     margin: 34px auto;
@@ -78,7 +86,7 @@ main {
     color: white;
 }
 
-/* Icon-ified Links */
+/* Small Icon-ified Links */
 @media screen and (max-width: 599px) {
     .links-item {
         min-height: 48px;
