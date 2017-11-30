@@ -1,0 +1,69 @@
+html {
+    font-family: 'Crimson Text', 'Times New Roman', serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1 {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background-color: #ff2222;
+    color: white;
+    text-align: center;
+    padding: 89px 34px;
+}
+
+main {
+    padding: 0 34px;
+}
+
+#page-title {
+    font-weight: 100;
+}
+
+@media screen and (max-width: 399px) {
+    .page-title-text {
+        display: flex;
+    }
+}
+
+.title-text-separator {
+    margin: 34px 0;
+    border: 0;
+    height: 1px;
+    background: white;
+}
+
+#page-subtitle {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+#links {
+    display: flex;
+    padding: 55px 0;
+    margin: 0;
+}
+
+.links-item {
+    width: 100%;
+    margin: 8px;
+    display: block;
+    background-color: white;
+    border-radius: 2px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.links-item a {
+    display: block;
+    padding: 13px;
+    color: #ff2222;
+    text-decoration: unset;
+    font-size: 0.8em;
+}
