@@ -118,17 +118,17 @@ main {
     
     .links-item.github  a {
         background-size: 16px;
-        background-image: url("../img/GitHub-Mark-32px.png");
+        background-image: url(../img/GitHub-Mark-32px.png);
     }
     
     .links-item.twitter a {
         background-size: 16px;
-        background-image: url("../img/Twitter_LogoPairingLockup_Username_C_32px.png");
+        background-image: url(../img/Twitter_LogoPairingLockup_Username_C_32px.png);
     }
     
     .links-item.linkedin a {
         background-size: 21px;
-        background-image: url("../img/In-Black-34px-R.png");
+        background-image: url(../img/In-Black-34px-R.png);
     }
 }
 
@@ -141,7 +141,7 @@ main {
 
     .links-item.github {
         background-size: 16px;
-        background-image: url("../img/GitHub-Mark-32px.png");
+        background-image: url(../img/GitHub-Mark-32px.png);
     }
 
     .links-item.github a:after {
@@ -150,7 +150,7 @@ main {
 
     .links-item.twitter {
         background-size: 16px;
-        background-image: url("../img/Twitter_LogoPairingLockup_Username_C_32px.png");
+        background-image: url(../img/Twitter_LogoPairingLockup_Username_C_32px.png);
     }
 
     .links-item.twitter a {
@@ -165,7 +165,7 @@ main {
 
     .links-item.linkedin {
         background-size: 21px;
-        background-image: url("../img/In-Black-34px-R.png");
+        background-image: url(../img/In-Black-34px-R.png);
     }
 }
 
