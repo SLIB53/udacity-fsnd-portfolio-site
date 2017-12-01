@@ -1,5 +1,6 @@
 html {
     font-family: 'Crimson Text', 'Times New Roman', serif;
+    min-width: 280px;
 }
 
 a {
@@ -65,7 +66,7 @@ main {
 #page-subtitle {
     font-weight: bold;
     font-style: italic;
-    font-size: 0.9em;
+    font-size: 16px;
 }
 
 #links {
@@ -174,6 +175,26 @@ main {
 
 .featured-work-item figure {
     margin: 0;
+}
+
+.featured-work-item figure img {
+    width: 100%;
+}
+
+.featured-work-item figcaption {
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: #f22;
+    font-style: italic;
+}
+
+.featured-work-item figcaption a {
+    display: inline-block;
+    box-sizing: border-box;
+    min-width: 48px;
+    min-height: 48px;
+    padding: 13px;
+    color: white;
 }
 
 @media screen and (min-width: 600px) {
