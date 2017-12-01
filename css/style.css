@@ -2,9 +2,25 @@ html {
     font-family: 'Crimson Text', 'Times New Roman', serif;
 }
 
+a {
+    color: #f22;
+}
+
 h1, h2, h3, h4, h5, h6,
 .h1 {
     font-family: 'Fira Sans', sans-serif;
+}
+
+h2 {
+    margin: 20px 0;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+h3 {
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: lighter;
 }
 
 body {
@@ -12,21 +28,23 @@ body {
 }
 
 header {
-    background-color: #ff2222;
+    background-color: #f22;
     padding: 89px 34px;
     text-align: center;
     color: white;
 }
 
 main {
-    padding: 0 34px;
+    max-width: 660px;
+    margin: auto;
+    padding: 55px 34px;
 }
 
 #page-title {
-    font-weight: 100;
+    font-weight: lighter;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 600px) {
     .page-title-text.first-name::before {
         content: "█ ";
     }
@@ -67,14 +85,14 @@ main {
 }
 
 .links-item:active {
-    background-color: #aa0000;
+    background-color: #a00;
 }
 
 .links-item a {
     display: block;
     padding: 17px;
-    color: #ff2222;
-    text-decoration: unset;
+    color: #f22;
+    text-decoration: none;
     font-size: 13px;
 }
 
@@ -85,6 +103,7 @@ main {
 /* Small Icon-ified Links */
 @media screen and (max-width: 599px) {
     .links-item {
+        box-sizing: border-box;
         min-height: 48px;
     }
     
@@ -116,8 +135,7 @@ main {
 @media screen and (min-width: 600px) {
     .links-item {
         background-repeat: no-repeat;
-        background-position-x: 13px;
-        background-position-y: center;
+        background-position: 13px center;
     }
 
     .links-item.github {
@@ -147,5 +165,34 @@ main {
     .links-item.linkedin {
         background-size: 21px;
         background-image: url("../img/In-Black-34px-R.png");
+    }
+}
+
+.article-grid-container * {
+    max-width: 100%;
+}
+
+.featured-work-item figure {
+    margin: 0;
+}
+
+@media screen and (min-width: 600px) {
+    .article-grid-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .featured-work-item {
+        box-sizing: border-box;
+        width: 50%;
+        padding-bottom:13px;
+    }
+
+    .featured-work-item:nth-child(odd) {
+        padding-right: 13px;
+    }
+    
+    .featured-work-item:nth-child(even) {
+        padding-left: 13px;
     }
 }
